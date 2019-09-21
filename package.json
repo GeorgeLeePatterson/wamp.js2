@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patotoma/wamp.js2.git"
+    "url": "git+https://github.com/GeorgeLeePatterson/wamp.js2.git"
   },
   "keywords": [
     "wamp",
