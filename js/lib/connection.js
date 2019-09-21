@@ -400,7 +400,7 @@ export class Connection {
 						self._is_retrying = true;
 
 						log.debug("retrying in " + next_retry.delay + " s");
-						self._retry_timer = setTimeout(::self._do_retry, next_retry.delay * 1000);
+						self._retry_timer = setTimeout(self._do_retry, next_retry.delay * 1000).bind(self);
 					} else {
 						log.debug("giving up trying to reconnect");
 						if (self.status !== STATUS.CLOSED) {
